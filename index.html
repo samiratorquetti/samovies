@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samovies</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img src="img/samovieslogo.jpg" alt="Logo samovies" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Não sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossos cartazes o que está buscando!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será seu proximo filme?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Destaques novos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/venon.jpg"
+            alt="Venon 3: A ultima rodada"></div>
+        <div class="swiper-slide"><img src="img/coringa.jpg"
+            alt="Coringa 2"></div>
+        <div class="swiper-slide"><img src="img/a forja.webp" alt="filme a forja">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/download.jpg" alt="Divertidamente 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/4027cc2b52f4759c444e28c753ae0b2e.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="imagens/Acessibilidade.jpg" alt="Livro sobre acessibilidade" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Lançamentos em breve</h3>
+          <h2 class="descrição__titulo-livro">Gladiador 2</h2>
+          <p class="descrição__texto">
+            Furia de Lucius.
+          </p>
+        </div>
+        <img src="img/4027cc2b52f4759c444e28c753ae0b2e.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vistos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/deadpool-e-wolverine-cartaz.avif"
+            alt="Deadpool"></div>
+        <div class="swiper-slide"><img src="img/donzela.jpg" alt="Donzela">
+        </div>
+        <div class="swiper-slide"><img src="img/01.jpg" alt="meu malvado">
+        </div>
+        <div class="swiper-slide"><img src="img/dunaa.webp" alt="duna"></div>
+        <div class="swiper-slide"><img src="img/badboys.jpg" alt="badboys"></div>
+        <div class="swiper-slide"><img src="img/planeta.webp" alt="plneta dos macacos"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Diretor destaque</h3>
+          <h2 class="descrição__titulo-livro">Christopher Nolan</h2>
+          <p class="descrição__texto">Diretor roteirista de Openhaimer.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/Christopher_Nolan_Cannes_2018.jpg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS MAIS PESQUISADOS</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Diretores</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Oscar</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Comedia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Lançamentos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Populares</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Romance</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Mais vistos</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das atualizações!</h2>
+    <p class="contato__texto">
+      Atualizações de filmes novos e tendências.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">samovies</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
